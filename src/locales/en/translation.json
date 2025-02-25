@@ -1,0 +1,15 @@
+{
+  "categories": {
+    "selectRemaining": "Select {{count}} or more categories",
+    "selectComplete": "Select categories",
+    "ready": "DONE"
+  },
+  "my_news": "My news",
+  "edit_categories": "Edit categories",
+  "third": {
+    "title": "Lorem ipsum dolor sit",
+    "description": "Lorem ipsum dolor sit amet consectetur. Mauris risus adipiscing tellus faucibus arcu nascetur purus.",
+    "add": "ADD",
+    "not_now": "Not now"
+  }
+}

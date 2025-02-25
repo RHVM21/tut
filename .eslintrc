@@ -1,0 +1,92 @@
+{
+  "ignorePatterns": ["tailwind.config.js"],
+  "root": true,
+  "extends": [
+    "prettier",
+    "airbnb",
+    "airbnb/hooks",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/strict-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
+    "plugin:@typescript-eslint/strict",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:security/recommended-legacy",
+    "plugin:i18next/recommended"
+  ],
+  "plugins": [
+    "prettier",
+    "@typescript-eslint",
+    "@stylexjs",
+    "react-refresh",
+    "simple-import-sort",
+    "import",
+    "eslint-plugin-react-compiler"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": ["./tsconfig.json", "./tsconfig.node.json"]
+  },
+  "rules": {
+    "no-console": "off",
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+    "@typescript-eslint/consistent-type-exports": "error",
+    "@typescript-eslint/consistent-type-imports": "error",
+    "@typescript-eslint/no-require-imports": "error",
+    "@typescript-eslint/no-useless-empty-export": "error",
+    "@typescript-eslint/prefer-reduce-type-parameter": "error",
+    "react-refresh/only-export-components": "off",
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": ":matches(ImportNamespaceSpecifier, ExportAllDeclaration, ExportNamespaceSpecifier)",
+        "message": "Import/export only modules you need"
+      }
+    ],
+
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": "warn",
+    "@typescript-eslint/no-unsafe-enum-comparison": "off",
+    "@typescript-eslint/no-unnecessary-condition": "warn",
+    "@typescript-eslint/no-unnecessary-type-arguments": "warn",
+    "@typescript-eslint/non-nullable-type-assertion-style": "warn",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "react/prop-types": "off",
+    "@stylexjs/valid-styles": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "import/extensions": [0, "never"],
+    "import/no-unresolved": [0, "never"],
+    "no-void": ["error", { "allowAsStatement": true }],
+    "consistent-return": ["error", { "treatUndefinedAsUnspecified": true }],
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".tsx", ".ts"] }
+    ],
+    "react/jsx-props-no-spreading": 0,
+    "no-nested-ternary": "off",
+    "react/require-default-props": "off",
+    "operator-linebreak": ["error", "after"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ],
+    "react-compiler/react-compiler": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

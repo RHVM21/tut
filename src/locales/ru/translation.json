@@ -1,0 +1,15 @@
+{
+  "categories": {
+    "selectRemaining": "Выберите {{count}} или более категории",
+    "selectComplete": "Выберите категории",
+    "ready": "ГОТОВО"  
+  },
+  "my_news": "Мои новости",
+  "edit_categories": "Изменить категории",
+  "third": {
+    "title": "Клиент очень умный",
+    "description": "Lorem ipsum dolor sit amet consectetur. Mauris risus adipiscing tellus faucibus arcu nascetur purus.",
+    "add": "ДОБАВИТЬ",
+    "not_now": "Не сейчас"
+  }
+}
