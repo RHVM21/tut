@@ -33,7 +33,6 @@ function FirstPage(): JSX.Element {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [categories, setCategories] = useState<Category[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
   const [selectedCategories, setSelectedCategories] = useState<Category[]>([]);
   const api = createApi();
   const isButtonActive = selectedCategories.length >= 3;
@@ -54,8 +53,6 @@ function FirstPage(): JSX.Element {
         setSelectedCategories(data.user_categories);
       } catch (error) {
         console.error('Error fetching user categories:', error);
-      } finally {
-        setIsLoading(false);
       }
     };
 
